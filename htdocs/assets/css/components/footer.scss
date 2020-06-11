@@ -1,0 +1,96 @@
+
+/* -------------------------------- 
+
+File#: _1_main-footer
+Title: Main Footer
+Descr: Footer navigation
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+.main-footer {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .main-footer__logo {
+    flex-shrink: 0;
+    width: 104px; // logo width
+    height: 30px; // logo height
+    display: block;
+  
+    svg, img {
+      display: block;
+      width: inherit;
+      height: inherit;
+    }
+  }
+  
+  .main-footer__link {
+    color: var(--color-contrast-medium);
+    text-decoration: none;
+  
+    &:hover {
+      color: var(--color-contrast-high);
+      text-decoration: underline;
+    }
+  }
+  
+  // colophon
+  .main-footer__colophon {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .main-footer__social {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--color-contrast-medium);
+  
+    &:hover {
+      color: var(--color-contrast-high);
+    }
+  }
+  
+  /* -------------------------------- 
+  File#: _1_socials
+  Title: Socials
+  Descr: Section with links to social media accounts
+  Usage: codyhouse.co/license
+  
+  -------------------------------- */
+  
+  .socials__btns {
+    li {
+      display: inline-block; // flex fallback
+    }
+  
+    a {
+      width: 2.5em;
+      height: 2.5em;
+      border-radius: 50%;
+      display: block; // flex fallback
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      background-color: var(--color-contrast-high);
+      color: var(--color-bg);
+      transition: background-color .2s, color .2s;
+  
+      &:hover {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+  
+        .icon {
+          transform: scale(1.2);
+        }
+      }
+    }
+  
+    .icon {
+      font-size: 1.25em; // icon size
+      transition: transform .2s var(--ease-out);
+    }
+  }

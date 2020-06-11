@@ -1,0 +1,108 @@
+/* -------------------------------- 
+
+File#: _1_main-footer
+Title: Main Footer
+Descr: Footer navigation
+Usage: codyhouse.co/license
+
+-------------------------------- */
+.main-footer {
+  position: relative;
+  z-index: 1;
+}
+
+.main-footer__logo {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 104px;
+  height: 30px;
+  display: block;
+}
+
+.main-footer__logo svg, .main-footer__logo img {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+
+.main-footer__link {
+  color: var(--color-contrast-medium);
+  text-decoration: none;
+}
+
+.main-footer__link:hover {
+  color: var(--color-contrast-high);
+  text-decoration: underline;
+}
+
+.main-footer__colophon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-footer__social {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--color-contrast-medium);
+}
+
+.main-footer__social:hover {
+  color: var(--color-contrast-high);
+}
+
+/* -------------------------------- 
+
+File#: _1_socials
+Title: Socials
+Descr: Section with links to social media accounts
+Usage: codyhouse.co/license
+
+-------------------------------- */
+.socials__btns li {
+  display: inline-block;
+}
+
+.socials__btns a {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color-contrast-high);
+  color: var(--color-bg);
+  -webkit-transition: background-color .2s, color .2s;
+  transition: background-color .2s, color .2s;
+}
+
+.socials__btns a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.socials__btns a:hover .icon {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.socials__btns .icon {
+  font-size: 1.25em;
+  -webkit-transition: -webkit-transform 0.2s var(--ease-out);
+  transition: -webkit-transform 0.2s var(--ease-out);
+  transition: transform 0.2s var(--ease-out);
+  transition: transform 0.2s var(--ease-out), -webkit-transform 0.2s var(--ease-out);
+}
+/*# sourceMappingURL=footer.css.map */
